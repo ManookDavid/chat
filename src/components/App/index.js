@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
 import './index.scss'
+import Login from '../Login'
 
 const withRouter = Component => props => {
     return (
@@ -13,7 +14,11 @@ const withRouter = Component => props => {
 const App = () => {
     return(
         <div>
-           <h1>Hello World</h1>
+           <Switch>
+               <Route path='/' exact>
+                   <Login/>
+               </Route>
+           </Switch>
         </div>
     )
 }

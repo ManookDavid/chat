@@ -1,0 +1,116 @@
+@import "bootstrap";
+button:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+h1{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+#login{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    display: flex;
+    #leftBackground {
+
+        width: 40%;
+        height: 100%;
+        background-image: url('../../../dist/photos/blue.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        input{
+            margin: 13px 0 13px 0;
+            padding-left: 10px;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+        }
+        #task{
+            position: relative;
+            box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.6);
+            background: #ffffff;
+            height: 750px;
+            width:90%;
+            div{
+                margin: auto;
+                height: 100%;
+                width: 70%;
+                button{
+                    margin: 13px 0 13px 0;
+                    border-radius: 5px;
+                    width: 100%;
+                    height: 50px;
+                }
+                #log{
+                    color: #ffffff;
+                    background: #6d0f66;
+                    border: none;
+                }
+                #facebook{
+                    color: #7d92bf;
+                    border-color: #7d92bf;
+                }
+                #google{
+                    border-color: #9fc1fb;
+                    color: #9fc1fb;
+                }
+                #remember {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    input{
+                        width: auto;
+                    }
+                    div{
+                        p{
+                            color: #95a4b5;
+                        }
+                        margin-left: 0;
+                        align-items: center;
+                        justify-content: space-between;
+                        display: flex;
+                        width: 130px;
+                    }
+                    width: 100%;
+                    height: 50px;
+                    p{
+                        color: #6d0f66;
+                    }
+                }
+                p{
+                    button{
+                        border: none;
+                        height: 20px;
+                        width: 100px;
+                        color:#6d0f66;
+                    }
+                }
+            }
+        }
+    }
+    #rightBackground {
+        width: 60%;
+        height: 100%;
+        background:linear-gradient(135deg, rgba(209,239,252,1) 0%, rgba(247,215,252,1) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        div{
+            box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.6);
+            background-image: url('../../../dist/photos/login.jpg');
+            background-size: cover;
+            height: 750px;
+            width: 90%;
+        }
+    }
+}
+p {
+    margin: 0;
+    color:#95a4b5;
+}

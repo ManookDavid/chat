@@ -11,6 +11,7 @@ module.exports = {
     },
     module: {
         rules: [
+            
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -43,13 +44,23 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {sourceMap: true}
-                    }
+                    },
+                    
                 ]
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ],
+              },
+            
         ]
     },
     devServer: {
-        contentBase: 'dist',
+        // contentBase: 'dist',
         compress: true,
         port: 3000,
         historyApiFallback: {
